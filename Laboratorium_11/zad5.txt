@@ -1,0 +1,9 @@
+
+Actions actions = new Actions(driver);
+actions.keyDown(Keys.CONTROL).sendKeys(Keys.F5).perform();
+
+
+driver.get(driver.getCurrentUrl());
+driver.navigate().to(driver.getCurrentUrl());
+driver.findElement(By.id("Contact-us")).sendKeys(Keys.F5); 
+driver.executeScript("history.go(0)");

@@ -1,0 +1,8 @@
+# Stworzylismy folder myApp
+mvn archetype:generate -DgroupId=mavenFirstTime -DartifactId=myApp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+#Budujemy projekt
+mvn compile 
+
+#I uruchomiamy
+java -cp myApp-1.0-SNAPSHOT.jar mavenFirstTime.App
