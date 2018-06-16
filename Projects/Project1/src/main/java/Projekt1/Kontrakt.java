@@ -184,7 +184,6 @@ public class Kontrakt implements Psikus {
 		if (liczba_dziel == 0)
 			throw new IllegalArgumentException();
 		
-		
 		return liczba%liczba_dziel == 0;
 	};
 	

@@ -41,12 +41,12 @@ public class HeheszkiParametrized {
 	}
     
     @Test
-	public void Heheszki_Proper_Input_Should_Be_Less_Than_Input() {
+	public void HeheszkiReturnsValueLesserThanInput() {
 		assertTrue(test.Heheszki(value) < value);
 	}
 	
 	@Test
-	public void Heheszki_Proper_Input_Should_Be_GreaterEqual_Than_Zero() {
+	public void HeheszkiReturnsValueGreaterEqualThanZero() {
 		assertTrue(test.Heheszki(value) >= 0);
 	}
 	

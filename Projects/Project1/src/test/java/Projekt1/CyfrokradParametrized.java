@@ -41,7 +41,7 @@ public class CyfrokradParametrized {
 	}
     
     @Test
-	public void CyfroKrad_Checking_difference_with_parameters() {
+	public void CyfroKradReturnsValueDifferentFromInput() {
 		assertThat(test.CyfroKrad(value), not(value));
     }
 	

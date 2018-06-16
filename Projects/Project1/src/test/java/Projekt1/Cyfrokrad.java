@@ -23,27 +23,27 @@ public class Cyfrokrad {
 	}
 	
 	@Test
-	public void CzyCyfrokrad_works_properly() {
+	public void CyfrokradWorksProperly() {
 		assertThat(test.CyfroKrad(37), Matchers.either(is(3)).or(is(7)));
 	}
 	
 	@Test
-	public void CzyCyfrokrad_different_from_input() {
+	public void CyfrokradReturnsValueDifferentFromInput() {
 		assertThat(test.CyfroKrad(37), not(37));
 	}
 	
 	@Test
-	public void CzyCyfrokrad_one_less_length_than_input() {
+	public void CyfrokradReturnsValueWithLengthLesserThanInput() {
 		assertThat(test.CyfroKrad(342).toString().length(), is(2));
 	}
 	
 	@Test
-	public void Cyfrokrad_is_Null_with_OneNumber_Input() {
+	public void CyfrokradReturnsNullWithOneNumberInput() {
 		assertNull(test.CyfroKrad(9));
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void Cyfrokrad_expected_IllegalArgumantException_with_null_Input() {
+	public void CyfrokradExpectedIllegalArgumantExceptionEithNullInput() {
 		test.CyfroKrad(null);
         fail("Expected an IllegalArgumentException to be thrown");
 	}

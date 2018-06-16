@@ -2,14 +2,11 @@ package Projekt1;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.not;
+import static org.hamcrest.Matchers.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import org.hamcrest.Matchers;
 
 public class Heheszki {
 	
@@ -21,37 +18,37 @@ public class Heheszki {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void Heheszki_Lesser_Than_Zero_Should_Throw_Exception() {
+	public void HeheszkiThrowsExceptionWhenInputIsLesserThanZero() {
 		test.Heheszki(-1);
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void Heheszki_Null_Input_Should_Throw_Exception() {
+	public void HeheszkiThrowsExceptionWhenInputIsNull() {
 		test.Heheszki(null);
 	}
 	
 	@Test
-	public void Heheszki_Should_Be_Different_from_Input() {
+	public void HeheszkiReturnsValueDifferentFromInput() {
 		assertThat(test.Heheszki(1), not(1));
 	}
 	
 	@Test
-	public void Heheszki_Should_Be_Different_From_One_Is_Zero() {
+	public void HeheszkiReturnsZeroWhenInputIsOne() {
 		assertThat(test.Heheszki(1), is(0));
 	}
 	
 	@Test
-	public void Heheszki_Proper_Input_Should_Be_Less_Than_Input() {
+	public void HeheszkiRetunsValueLesserThanInput() {
 		assertTrue(test.Heheszki(12) < 12);
 	}
 	
 	@Test
-	public void Heheszki_Proper_Input_Should_Be_GreaterEqual_Than_Zero() {
+	public void HeheszkiReturnsValueGreaterEqualThanZero() {
 		assertTrue(test.Heheszki(12) >= 0);
 	}
 	
 	@Test
-	public void Heheszki_Zero_Input_Should_return_Zero() {
+	public void HeheszkiReturnsZeroWhenInputIsZero() {
 		assertTrue(test.Heheszki(0) == 0);
 	}
 	

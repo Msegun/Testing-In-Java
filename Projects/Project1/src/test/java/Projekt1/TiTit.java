@@ -16,22 +16,22 @@ public class TiTit {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void Should_return_Exception_With_Null_Input() {
+	public void TiTitThrowsExceptionWithNullInput() {
 		testNumber.Titit(null);
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void Should_return_Exception_With_Zero_Input() {
+	public void TiTitThrowsExceptionWithZeroInput() {
 		testNumber.Titit(0);
 	}
 	
 	@Test
-	public void Should_return_True_with_correct_Input() {
+	public void TiTitReturnsTrueWithCorrectInput() {
 		assertTrue(testNumber.Titit(5));
 	}
 	
 	@Test
-	public void Should_return_False_with_Incorrect_Input() {
+	public void TiTitReturnsFalseWithIncorrectInput() {
 		assertFalse(testNumber.Titit(4));
 	}
 	
